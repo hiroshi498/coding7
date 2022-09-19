@@ -430,6 +430,19 @@ html {
   margin-left: 44px;
 }
 
+@media only screen and (max-width: 768px) {
+  .header__logo {
+    margin: 0;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.header__logo a:hover {
+  opacity: 0.7;
+}
+
 .mainvisual {
   max-width: 698px;
   margin: 0 auto 56px auto;
@@ -437,15 +450,35 @@ html {
   font-weight: bold;
 }
 
+@media only screen and (max-width: 768px) {
+  .mainvisual {
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
 .mainvisual h1 {
   font-size: 8rem;
   color: #eaaf46;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainvisual h1 {
+    font-size: 5rem;
+  }
 }
 
 .mainvisual__text {
   display: block;
   font-size: 2rem;
   margin-bottom: 37px;
+}
+
+@media only screen and (max-width: 768px) {
+  .mainvisual__text {
+    font-size: 1.4rem;
+  }
 }
 
 .maincontent {
@@ -457,6 +490,13 @@ html {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .maincontent h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
 }
 
 .maincontent__content .block {
@@ -472,8 +512,33 @@ html {
   margin-bottom: 42px;
 }
 
+@media only screen and (max-width: 768px) {
+  .maincontent__content .block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .maincontent__content .block__img {
+    margin-bottom: 30px;
+  }
+}
+
 .maincontent__content .block__right {
   max-width: 347px;
+}
+
+@media only screen and (max-width: 768px) {
+  .maincontent__content .block__right {
+    max-width: 60%;
+    text-align: center;
+  }
 }
 
 .maincontent__content .block__right .title {
@@ -481,10 +546,23 @@ html {
   margin-bottom: 29px;
 }
 
+@media only screen and (max-width: 768px) {
+  .maincontent__content .block__right .title {
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+  }
+}
+
 .maincontent__content .block__right .text {
   font-size: 2rem;
   line-height: 1.25;
   margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+  .maincontent__content .block__right .text {
+    font-size: 1.5rem;
+  }
 }
 
 .maincontent__content .block__right .btn a {
@@ -499,10 +577,124 @@ html {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .maincontent__content .block__right .btn a {
+    margin: 0 auto;
+    width: 170px;
+    height: 40px;
+    font-size: 1.7rem;
+    line-height: 40px;
+  }
+}
+
+.maincontent__content .block__right .btn a:hover {
+  opacity: 0.7;
+}
+
 .maincontent__content .block2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 768px) {
+  .maincontent__content .block2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.media {
+  width: 100%;
+  height: 135px;
+  background-color: #eaaf46;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.media__inr {
+  text-align: center;
+}
+
+.media__inr .media__text {
+  font-size: 2rem;
+  margin-bottom: 26px;
+}
+
+.media__inr .media__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  .media__inr .media__icon {
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.media__inr .media__icon a {
+  margin-left: 12px;
+}
+
+.media__inr .media__icon a:first-child {
+  margin: 0;
+}
+
+.media__inr .media__icon a:hover {
+  opacity: 0.7;
+}
+
+.footer {
+  width: 100%;
+  height: 91px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+}
+
+.footer__inr ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.6rem;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .footer__inr ul {
+    font-size: 1.5rem;
+  }
+}
+
+.footer__inr ul li {
+  margin-left: 41px;
+}
+
+.footer__inr ul li:first-child {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

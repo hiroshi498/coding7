@@ -447,6 +447,14 @@ html {
   margin-bottom: 30px;
   &__logo{
     margin-left: 44px;
+    @media #{$sp}{
+      margin: 0;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+    a:hover{
+      opacity: 0.7;
+    }
   }
 }
 
@@ -457,14 +465,24 @@ html {
   margin: 0 auto 56px auto;
   text-align: center;
   font-weight: bold;
+  @media #{$sp}{
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
   h1{
     font-size: 8rem;
     color: #eaaf46;
+    @media #{$sp}{
+      font-size: 5rem;
+    }
   }
   &__text{
     display: block;
     font-size: 2rem;
     margin-bottom: 37px;
+    @media #{$sp}{
+      font-size: 1.4rem;
+    }
   }
 }
 
@@ -477,6 +495,10 @@ html {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 25px;
+    @media #{$sp}{
+      text-align: center;
+      font-size: 2.5rem;
+    }
   }
   &__content{
     .block{
@@ -484,16 +506,36 @@ html {
       justify-content: space-between;
       align-items: flex-end;
       margin-bottom: 42px;
+      @media #{$sp}{
+        flex-direction: column;
+        align-items: center;
+      }
+      &__img{
+        @media #{$sp}{
+          margin-bottom: 30px;
+        }
+      }
       &__right{
         max-width: 347px;
+        @media #{$sp}{
+          max-width: 60%;
+          text-align: center;
+        }
         .title{
           font-size: 2.5rem;
           margin-bottom: 29px;
+          @media #{$sp}{
+            font-size: 2.2rem;
+            margin-bottom: 18px;
+          }
         }
         .text{
           font-size: 2rem;
           line-height: 1.25;
           margin-bottom: 24px;
+          @media #{$sp}{
+            font-size: 1.5rem;
+          }
         }
         .btn{
           a{
@@ -506,12 +548,87 @@ html {
             border-radius: 10px;
             line-height: 48px;
             text-align: center;
+            @media #{$sp}{
+              margin: 0 auto;
+              width: 170px;
+              height: 40px;
+              font-size: 1.7rem;
+              line-height: 40px;
+            }
+          }
+          a:hover{
+            opacity: 0.7;
           }
         }
       }
     }
     .block2{
       flex-direction: row-reverse;
+      @media #{$sp}{
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+//media
+
+.media {
+  width: 100%;
+  height: 135px;
+  background-color: #eaaf46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__inr{
+    text-align: center;
+    .media__text{
+      font-size: 2rem;
+      margin-bottom: 26px;
+    }
+    .media__icon{
+      display: flex;
+      @media #{$sp}{
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+      a{
+        margin-left: 12px;
+      }
+      a:first-child{
+        margin: 0;
+      }
+      a:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+//footer
+
+.footer{
+  width: 100%;
+  height: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media #{$sp}{
+    display: none;
+  }
+  &__inr{
+    ul{
+      display: flex;
+      font-size: 1.6rem;
+      @media #{$tab}{
+        font-size: 1.5rem;
+      }
+      li{
+        margin-left: 41px;
+      }
+      li:first-child{
+        margin: 0;
+      }
     }
   }
 }
